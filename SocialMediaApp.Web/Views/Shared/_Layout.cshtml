@@ -1,0 +1,53 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - U Social</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <h1>U Social</h1>
+    <h4 style="color:gold;">A place for students</h4>
+    <a href="@Url.Action("Index", "Home")">
+        <img class="img" src="~/Content/images/gradCap.png" alt="graduation cap" style="display: block; margin-left: auto; margin-right: auto; height: 10%; width: 10%;" />
+    </a>
+    <nav class="navbar navbar-expand-lg navbar nav fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="@Url.Action("Index", "Home")">U Social</a>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Register", "User")">Placeholder</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("#", "#")">Placeholder</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("#", "#")">Placeholder</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Login", "Account")">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Michael Harmon, Brian Elliot, Andrew Snook</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
