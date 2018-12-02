@@ -16,14 +16,14 @@ namespace SocialMediaApp.Web.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
-        public AccountController()
-        {
-        }
-
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
             SignInManager = signInManager;
+        }
+
+        public AccountController()
+        {
         }
 
         public ApplicationSignInManager SignInManager
@@ -166,7 +166,7 @@ namespace SocialMediaApp.Web.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Profile", "Home");
                 }
                 AddErrors(result);
             }
@@ -452,7 +452,7 @@ namespace SocialMediaApp.Web.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Profile", "Home");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

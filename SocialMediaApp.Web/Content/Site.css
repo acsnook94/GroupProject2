@@ -19,16 +19,19 @@ textarea {
     text-align: center;
 }
 .center label{
-    color:gray;
-}
-
-.container{
+    color: gray;
 }
 
 .login{
     width: 75%;
 }
 
-h1{
+.USocial{
     margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+.USocialSub {
+    margin-left: 1.75em;
+    color: gold;
 }
