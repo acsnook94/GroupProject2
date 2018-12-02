@@ -24,5 +24,10 @@ namespace SocialMediaApp.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult ProfileSetup()
+        {
+            return View();
+        }
     }
 }
