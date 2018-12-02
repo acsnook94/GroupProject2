@@ -6,6 +6,10 @@ namespace SocialMediaApp.Domain
 {
     public class socialContext : DbContext
     {
+        public socialContext() : base("DefaultConnection")
+        {
+        }
+
         public DbSet<User> UserInformation { get; set; }
     }
 }

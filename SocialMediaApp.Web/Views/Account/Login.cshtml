@@ -1,15 +1,11 @@
 ﻿@using SocialMediaApp.Web.Models
 @model LoginViewModel
-@{Layout=null;}
+@*@{Layout=null;}*@
 
 @{
     ViewBag.Title = "Log in";
+    Layout = "_AccountLayout.cshtml";
 }
-<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<script src="~/Scripts/modernizr-2.6.2.js"></script>
-<script src="~/Scripts/jquery-3.0.0.min.js"></script>
-<script src="~/Scripts/bootstrap.min.js"></script>
 
 <h2>@ViewBag.Title.</h2>
 <div class="row">

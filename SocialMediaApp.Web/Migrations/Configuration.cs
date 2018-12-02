@@ -1,15 +1,15 @@
-namespace SocialMediaApp.Domain.Migrations
+namespace SocialMediaApp.Web.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<SocialMediaApp.Domain.socialContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<SocialMediaApp.Web.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(SocialMediaApp.Domain.socialContext context)
+        protected override void Seed(SocialMediaApp.Web.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
