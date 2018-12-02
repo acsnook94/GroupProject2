@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SocialMediaApp.Domain;
+﻿
 using System.Data.Entity;
 using SocialMediaApp.Domain.Entities;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace SocialMediaApp.Domain
 {
-    public class socialContext : DbContext
+    public class socialContext : IdentityDbContext<AppUser>
     {
         public DbSet<User> UserInformation { get; set; }
     }
