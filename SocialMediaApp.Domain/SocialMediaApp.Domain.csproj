@@ -75,11 +75,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SocialMediaApp.Web\SocialMediaApp.Web.csproj">
-      <Project>{C0321005-0A76-46FD-B589-E8B541D8F6FE}</Project>
-      <Name>SocialMediaApp.Web</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

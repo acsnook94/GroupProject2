@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace SocialMediaApp.Web.Models
+namespace SocialMediaApp.Shared.ViewModels
 {
     public class IndexViewModel
     {
@@ -12,11 +12,6 @@ namespace SocialMediaApp.Web.Models
         public string PhoneNumber { get; set; }
         public bool TwoFactor { get; set; }
         public bool BrowserRemembered { get; set; }
-        public string Email {get; set;}
-        public string FirstName {get; set;}
-        public string LastName {get; set;}
-        public string UniversityName {get; set;}
-        public string Major {get; set;}
     }
 
     public class ManageLoginsViewModel

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace SocialMediaApp.Web.Models
+namespace SocialMediaApp.Shared.ViewModels
 {
     public class ExternalLoginConfirmationViewModel
     {
@@ -80,14 +80,6 @@ namespace SocialMediaApp.Web.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
-        public string FirstName {get;set;}
-        public string LastName {get;set;}
-        public string UniversityName {get;set;}
-        public string Major {get;set;}
-    }
-
-    public class UserViewModel
-    {
         public string FirstName {get;set;}
         public string LastName {get;set;}
         public string UniversityName {get;set;}
