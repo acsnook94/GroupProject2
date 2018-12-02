@@ -16,10 +16,10 @@ namespace SocialMediaApp.Web.Models
             return userIdentity;
         }
 
-        public string FirstName {get;set;}
-        public string LastName {get;set;}
-        public string UniversityName {get;set;}
-        public string Major {get;set;}
+        //public string FirstName {get;set;}
+        //public string LastName {get;set;}
+        //public string UniversityName {get;set;}
+        //public string Major {get;set;}
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

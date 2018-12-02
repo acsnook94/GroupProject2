@@ -150,10 +150,10 @@ namespace SocialMediaApp.Web.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                user.FirstName = model.FirstName;
-                user.LastName = model.LastName;
-                user.UniversityName = model.UniversityName;
-                user.Major = model.Major;
+                //user.FirstName = model.FirstName;
+                //user.LastName = model.LastName;
+                //user.UniversityName = model.UniversityName;
+                //user.Major = model.Major;
 
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
