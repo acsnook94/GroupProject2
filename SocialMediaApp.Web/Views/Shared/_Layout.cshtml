@@ -14,15 +14,18 @@
 <body>
     <h1 class="USocial">U Social</h1>
     <h4 class="USocialSub">A place for students</h4>
-    <a href="@Url.Action("Index", "Home")">
+    <a href="@Url.Action("Profile", "Home")">
         <img class="img" src="~/Content/images/gradCap.png" alt="graduation cap" style="display: block; margin-left: auto; margin-right: auto; height: 10%; width: 10%;" />
     </a>
     <nav class="navbar navbar-expand-lg navbar nav fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="@Url.Action("Index", "Home")">U Social</a>
+        <a class="navbar-brand" href="@Url.Action("Profile", "Home")">U Social</a>
         <div class="container-fluid">
             <ul class="navbar-nav row">
                 <li class="nav-item active">
-                    <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
+                    <a class="nav-link" href="@Url.Action("Profile", "Home")">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("ProfileSetup", "Home")">Setup</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="@Url.Action("Register", "User")">Placeholder</a>
@@ -30,12 +33,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="@Url.Action("#", "#")">Placeholder</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="@Url.Action("#", "#")">Placeholder</a>
-                </li>
                 @*<li class="nav-item active">
-                    <a class="nav-link" href="@Url.Action("Login", "Account")">Logout</a>
-                </li>*@
+            <a class="nav-link" href="@Url.Action("Login", "Account")">Logout</a>
+        </li>*@
             </ul>
 
             @Html.Partial("_LoginPartial")
