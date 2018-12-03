@@ -7,7 +7,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using SocialMediaApp.Domain;
-using SocialMediaApp.Web.Models;
+using SocialMediaApp.Shared;
 
 namespace SocialMediaApp.Web.App_Start
 {

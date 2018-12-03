@@ -3,11 +3,10 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Owin;
 using SocialMediaApp.Domain;
+using SocialMediaApp.Shared;
 using SocialMediaApp.Web.App_Start;
-using SocialMediaApp.Web.Models;
 
 namespace SocialMediaApp.Web
 {

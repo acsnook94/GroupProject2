@@ -5,9 +5,10 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using SocialMediaApp.Domain;
+using SocialMediaApp.Shared;
 using SocialMediaApp.Shared.ViewModels;
 using SocialMediaApp.Web.App_Start;
-using SocialMediaApp.Web.Models;
 
 namespace SocialMediaApp.Web.Controllers
 {
