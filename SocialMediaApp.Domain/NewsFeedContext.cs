@@ -10,7 +10,5 @@ namespace SocialMediaApp.Domain
         {
         }
 
-        public DbSet<User> UserInformation { get; set; }
-        public DbSet<NewsFeedPost> NewsFeed {get; set; }
     }
 }

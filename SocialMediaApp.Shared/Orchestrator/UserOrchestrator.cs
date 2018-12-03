@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using SocialMediaApp.Domain;
 using SocialMediaApp.Shared.Interfaces;
 using SocialMediaApp.Shared.ViewModels;
 using SocialMediaApp.Domain.Entities;
+using System.Data.Entity;
 
 namespace SocialMediaApp.Shared.Orchestrators
 {
