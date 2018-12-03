@@ -68,7 +68,6 @@
   <ItemGroup>
     <Compile Include="Entities\NewsFeedPost.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="socialContext.cs" />
   </ItemGroup>
