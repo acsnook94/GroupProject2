@@ -1,5 +1,4 @@
-﻿using SocialMediaApp.Shared.ViewModels;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace SocialMediaApp.Shared.Interfaces
