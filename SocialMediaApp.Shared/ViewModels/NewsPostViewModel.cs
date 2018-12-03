@@ -1,6 +1,6 @@
 ﻿namespace SocialMediaApp.Shared.ViewModels
 {
-    class NewsPostViewModel
+    public class NewsPostViewModel
     {
         public string UserName {get; set;}
         public string FirstName { get; set; }
