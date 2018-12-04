@@ -22,10 +22,16 @@ namespace SocialMediaApp.Domain
             return userIdentity;
         }
 
-        //public string FirstName {get;set;}
-        //public string LastName {get;set;}
-        //public string UniversityName {get;set;}
-        //public string Major {get;set;}
+
+        //Custom user properties
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
+        public string LastName { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
+        public string Major { get; set; }
+        public string UniversityName { get; set; }
     }
 
     //public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -47,7 +53,7 @@ namespace SocialMediaApp.Domain
         {
         }
 
-        public DbSet<User> UserInformation { get; set; }
+        public override IDbSet<ApplicationUser> Users { get; set; }
         public DbSet<NewsFeedPost> NewsFeed {get; set; }
 
         public static socialContext Create()

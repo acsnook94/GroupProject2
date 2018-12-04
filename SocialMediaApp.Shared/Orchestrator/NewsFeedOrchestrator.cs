@@ -2,6 +2,7 @@
 using SocialMediaApp.Domain.Entities;
 using SocialMediaApp.Shared.Interfaces;
 using SocialMediaApp.Shared.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace SocialMediaApp.Shared.Orchestrator
             _socialContext = new socialContext();
         }
 
-        public async Task<int> AddNewPost(NewsPostViewModel post, UserViewModel user)
+        public async Task<int> AddNewPost(NewsPostViewModel post, AppUserViewModel user)
         {
             _socialContext.NewsFeed.Add(new NewsFeedPost
             {

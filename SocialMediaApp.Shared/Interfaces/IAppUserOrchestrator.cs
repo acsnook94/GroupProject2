@@ -4,9 +4,8 @@ using System.Threading.Tasks;
 
 namespace SocialMediaApp.Shared.Interfaces
 {
-    interface INewsFeedOrchestrator
+    interface IAppUserOrchestrator
     {
-        Task<List<NewsPostViewModel>> GetAllPosts();
-        Task<int> AddNewPost(NewsPostViewModel post, AppUserViewModel user);
+        Task<List<AppUserViewModel>> GetAllUsers();
     }
 }

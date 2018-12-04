@@ -1,13 +1,6 @@
-﻿using SocialMediaApp.Api.Models;
-using SocialMediaApp.Domain;
-using SocialMediaApp.Shared.Orchestrators;
+﻿using SocialMediaApp.Shared.Orchestrators;
 using SocialMediaApp.Shared.ViewModels;
-using System;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 
@@ -16,16 +9,16 @@ namespace SocialMediaApp.Api.Controllers
     [Route("api/v1/users")]
     public class UserController : ApiController
     {
-        private UserOrchestrator _userOrchestrator;
+        private AppUserOrchestrator _appUserOrchestrator;
 
         public UserController()
         {
-            _userOrchestrator = new UserOrchestrator();
+            _appUserOrchestrator = new AppUserOrchestrator();
         }
 
-        public async Task<List<UserViewModel>> GetAllUsers()
+        public async Task<List<AppUserViewModel>> GetAllUsers()
         {
-            var users = await _userOrchestrator.GetAllUsers();
+            var users = await _appUserOrchestrator.GetAllUsers();
 
             return users;
         }
